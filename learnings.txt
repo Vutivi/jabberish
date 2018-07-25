@@ -1,0 +1,5 @@
+#When deploying to heroku and precompile assets is not working
+
+heroku run gem cleanup
+rake assets:precompile (locale)
+git push heroku master 
