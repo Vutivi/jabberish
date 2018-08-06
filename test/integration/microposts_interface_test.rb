@@ -22,7 +22,7 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
                                      { content: content,
                                        picture: picture } }
    end
-   assert @user.micropost.picture?
+   assert FILL_IN.picture?
    follow_redirect!
    assert_match content, response.body
    # Delete a post.
